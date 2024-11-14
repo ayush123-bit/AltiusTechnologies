@@ -1,0 +1,134 @@
+.mega-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Optional background color */
+    padding: 0 20px; /* Add horizontal padding */
+    box-sizing: border-box; /* Include padding in element's total width */
+  }
+  
+  .picContainer {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex: 1; /* Allow the container to expand and shrink with content */
+    max-width: 100%; /* Ensure the container does not exceed its parent's width */
+    max-height: 400px; /* Set a maximum height for the container */
+  }
+  
+  .picContainer img {
+    max-width: 50%; /* Make sure the image scales down with the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50%; /* Ensure the image does not exceed container height */
+    display: block; /* Remove bottom space from inline-block elements */
+  }
+  
+  .login-container {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    margin-right: 150px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Ensure label is aligned to the left */
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-submit {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center; /* Center the heading */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .picContainer {
+      max-height: 300px; /* Adjust max height for larger screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      margin: 20px;
+      width: calc(100% - 40px); /* Full width with margins */
+    }
+  
+    .form {
+      max-width: 100%;
+    }
+  
+    .form h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .form-group input {
+      font-size: 14px; /* Adjust input font size for smaller screens */
+    }
+  
+    .btn-submit {
+      font-size: 16px; /* Adjust button font size for smaller screens */
+    }
+  
+    .mega-container {
+      height: auto; /* Allow container to resize with content */
+      padding: 20px; /* Add padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 15px;
+      margin-top: 170px; /* Reduce padding for smaller screens */
+    }
+  
+    .form h2 {
+      font-size: 18px; /* Further adjust font size */
+    }
+  
+    .btn-submit {
+      font-size: 14px; /* Further adjust button font size */
+    }
+  
+    .mega-container {
+      padding: 15px; /* Consistent padding for very small screens */
+    }
+  }
+  

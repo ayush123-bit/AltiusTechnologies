@@ -1,0 +1,137 @@
+.admin-dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.menus {
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  height: 100vh;
+}
+
+.dashboard-content {
+  margin-left: 220px;
+  padding: 20px;
+  width: calc(100% - 220px);
+  background-color: #f4f4f4;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  z-index: 11;
+}
+
+/* Top Cards */
+.top-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Graphs */
+.graphs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.graph {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-width {
+  width: 100%;
+  height: 300px;
+}
+
+.graph-heading {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .menus {
+    display: none; /* Hide sidebar by default on mobile */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger button on mobile */
+    left: 0;
+    top: 0;
+    color: red;
+    position: fixed;
+  }
+
+  .graph-heading {
+    display: none; /* Hide graph headings in mobile */
+  }
+
+  /* Show menu on mobile when opened */
+  .mobile-menu {
+    display: block;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    z-index: 10;
+    padding-top: 60px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .top-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .graphs {
+    flex-direction: column;
+  }
+
+  .full-width {
+    height: 250px;
+  }
+}

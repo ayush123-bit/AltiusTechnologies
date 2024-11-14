@@ -1,0 +1,82 @@
+/* Container for Navbar */
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333; /* Dark background color */
+  height: 100vh; /* Full vertical height */
+  width: 250px; /* Fixed width for sidebar */
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Navbar Heading */
+.navbar-heading {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Navigation Items Container */
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+/* Each Navigation Item */
+.nav-item {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.nav-item .nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-item .nav-link:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+  color: #fff; /* White color for text on hover */
+}
+
+/* Selected Item (Optional) */
+.nav-item .nav-link.active {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Modal, Table and Content Overlay when Navbar is present */
+.main-content {
+  margin-left: 250px; /* Same as navbar width to avoid overlap */
+  padding: 20px;
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar-container {
+    width: 200px;
+  }
+
+  .navbar-heading {
+    font-size: 20px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 16px;
+  }
+}

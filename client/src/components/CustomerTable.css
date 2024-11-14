@@ -1,0 +1,95 @@
+/* Full-page layout with center alignment */
+.tickets-table-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+  height: 100vh; /* Make sure it takes full height */
+  width: 100%;
+  box-sizing: border-box; /* Prevents overflow from padding */
+  margin: 0;
+}
+
+/* Table Content Style - Centered */
+.tickets-table-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1200px; /* Adjust to your preferred max width */
+  overflow-x: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #90caf9;
+}
+
+/* Heading */
+.tickets-table-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Table Styles */
+.tickets-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+.tickets-table th,
+.tickets-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.tickets-table th {
+  background-color: #007acc;
+  color: #fff;
+}
+
+.tickets-table-row:hover {
+  background-color: #f1f9ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tickets-table-row td {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tickets-table-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .tickets-table th,
+  .tickets-table td {
+    padding: 8px;
+  }
+
+  .tickets-table {
+    font-size: 14px;
+  }
+}
+
+/* Scrollbar customization */
+.tickets-table-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tickets-table-content::-webkit-scrollbar-thumb {
+  background-color: #007acc;
+  border-radius: 4px;
+}
+
+.tickets-table-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

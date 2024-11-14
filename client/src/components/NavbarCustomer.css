@@ -1,0 +1,77 @@
+/* src/components/NavbarCustomer.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #45a049;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .mobile-menu button {
+    margin: 5px 0;
+  }
+}
+
+.customer-navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.customer-navbar-links .navbar-button {
+  background-color: #ff9800; /* Customize the button color */
+}
+
+.customer-navbar-links .navbar-button:hover {
+  background-color: #f57c00;
+}

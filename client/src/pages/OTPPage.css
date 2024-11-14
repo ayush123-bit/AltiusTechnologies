@@ -1,0 +1,146 @@
+/* OTPPage.css */
+
+.otp-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f4f8;
+    padding: 1rem;
+  }
+  
+  .otp-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .email-icon {
+    color: #007bff;
+    margin-right: 0.5rem;
+  }
+  
+  .otp-instruction {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .otp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .otp-input-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .otp-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: border-color 0.3s;
+  }
+  
+  .otp-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+  }
+  
+  .success-icon {
+    color: #28a745;
+  }
+  
+  .error-icon {
+    color: #d9534f;
+  }
+  
+  .otp-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .otp-button:disabled {
+    background-color: #b0c4de;
+  }
+  
+  .otp-button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .otp-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .otp-message.success {
+    color: #28a745;
+  }
+  
+  .otp-message.error {
+    color: #d9534f;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 600px) {
+    .otp-container {
+      padding: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .otp-input {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .otp-button {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .otp-instruction {
+      font-size: 0.85rem;
+    }
+  }
+  
